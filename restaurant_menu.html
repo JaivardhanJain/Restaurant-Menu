@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JJ's Menu</title>
+        <style>
+            body {
+                background-color: #F5F5DC;
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+
+            header {
+                background-color: #fff;
+                padding-bottom: 10px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            #menu-head {
+                text-align: center;
+                color: brown;
+                margin-bottom: 0.2em;
+                padding-top: 0.5em;
+            }
+
+            .navbar ul {
+                list-style-type: none;
+                display: flex;
+                justify-content: center;
+                gap: 2em;
+                padding: 0;
+                margin: 0;
+            }
+
+            .navbar ul li a {
+                text-decoration: none;
+                color: brown;
+                font-weight: bold;
+                transition: color 0.3s;
+            }
+
+            .navbar ul li a:hover {
+                color: #333;
+            }
+
+            .post-section {
+                width: 10%;
+                margin: 10px auto;
+            }
+
+            .heads {
+                color: brown;
+                text-align: center;
+                margin-bottom: 0.2em;
+            }
+
+            #about, #menu {
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 800px;
+                text-align: justify;
+                line-height: 1.6;
+                padding: 0.1em;
+            }
+
+            #menu-section table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 1em;
+                font-size: 1rem;
+            }
+
+            #menu-section td {
+                padding: 12px 8px;
+                border-bottom: 1px solid #ccc;
+            }
+
+            #menu-section tr:hover {
+                background-color: #f1f1f1;
+            }
+
+            #menu-section td:last-child {
+                text-align: right;
+                font-weight: bold;
+                color: #444;
+            }
+            #contact-form {
+            text-align: center;
+            background-color: #fff;
+            padding: 2em;
+            margin: 2em auto;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            }
+
+            #contact-form input[type="text"],
+            #contact-form textarea {
+                width: 90%;
+                max-width: 500px;
+                padding: 0.75em;
+                margin-top: 0.5em;
+                border: 1px solid #ccc;
+                border-radius: 6px;
+                font-size: 1rem;
+                font-family: inherit;
+                box-sizing: border-box;
+            }
+
+            #contact-form textarea {
+                resize: vertical;
+                height: 120px;
+            }
+
+            #contact-form input[type="submit"] {
+                background-color: brown;
+                color: white;
+                border: none;
+                padding: 0.75em 1.5em;
+                border-radius: 6px;
+                cursor: pointer;
+                font-size: 1rem;
+                margin-top: 1em;
+                transition: background-color 0.3s ease;
+            }
+
+            #contact-form input[type="submit"]:hover {
+                background-color: #5a2c2c;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 id="menu-head">JJ's</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#about-section">About Us</a></li>
+                    <li><a href="#menu-section">Menu</a></li>
+                    <li><a href="#contact-us-section">Contact</a></li>
+                </ul>
+                <hr class="post-section">
+            </nav>
+        </header>
+        <main>
+            <section id="about-section">
+                <u><h2 class="heads">About Us</h2></u>
+                <p id="about">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porta lacinia risus eget vulputate. Fusce aliquam est a euismod congue. Suspendisse mauris metus, venenatis eu sapien ut, rutrum luctus libero. Etiam placerat sapien id mauris maximus tincidunt. Suspendisse enim lacus, luctus sit amet tempus in, auctor sed magna. Aliquam lacinia enim ipsum, ac tempor ligula iaculis et. Donec in velit tristique, volutpat libero in, sollicitudin dui. Aliquam tempor pretium lorem eget facilisis. Sed a ex nunc.<br>
+
+Proin erat dui, pharetra in magna a, semper dictum tortor. Integer nibh odio, bibendum et ultrices eget, sodales quis tellus. Nulla nec vulputate turpis. Cras nec diam at lacus dictum lacinia sed id dui. Praesent sed vulputate augue. Phasellus eleifend accumsan justo imperdiet iaculis. Aliquam arcu urna, auctor vitae augue sit amet, viverra placerat neque. Nunc sagittis lacinia nisi, non vulputate tellus volutpat nec. Suspendisse eget lacus vestibulum erat mattis ullamcorper. Curabitur suscipit venenatis elit eget lobortis. Vivamus vulputate velit nulla, at placerat mauris scelerisque eu. Sed hendrerit eros vitae lacus interdum, id tristique elit blandit. Donec faucibus lacus quis tellus fermentum, sit amet gravida neque tristique. Morbi nibh diam, pretium vitae neque auctor, condimentum pellentesque justo. Nulla vel mi vel risus lacinia facilisis a ut erat. Donec sed egestas sem.                </p>
+            </section>
+
+            <hr class="post-section">
+
+            <section id="menu-section">
+                <u><h2 class="heads">Menu</h2></u>
+                <table id="menu">
+                    <tr>
+                        <td>Truffle Mushroom Burger</td>
+                        <td>₹500</td>
+                    </tr>
+                    <tr>
+                        <td>Farmhouse Pizza</td>
+                        <td>₹750</td>
+                    </tr>
+                    <tr>
+                        <td>Greek Salad</td>
+                        <td>₹500</td>           
+                    </tr>
+                    <tr>
+                        <td>Spicy Panner Wrap</td>
+                        <td>₹350</td>
+                    </tr>
+                    <tr>
+                        <td>Veg Pho</td>
+                        <td>₹850</td>
+                    </tr>
+                    <tr>
+                        <td>Thai Green Curry with Jasmine Rice</td>
+                        <td>₹650</td>
+                    </tr>
+                    <tr>
+                        <td>Vegan Buddha Bowl</td>
+                        <td>₹500</td>
+                    </tr>
+                    <tr>
+                        <td>Peri Peri Fries</td>
+                        <td>₹350</td>
+                    </tr>
+                    <tr>
+                        <td>Mediterranean Falafel Pita</td>
+                        <td>₹480</td>
+                    </tr>
+                </table>
+            </section>
+            <section id="contact-us-section">
+                <form id="contact-form">
+                    <u><h2 class="heads">Contact Us</h2></u>
+                    <br>
+                    <label for="name">Name: <input type=text id="name"></label> 
+                    <br><br>
+                    <label for="cas">Comments and Suggestions:</label>
+                    <br>
+                    <textarea id="cas" row="7" cols="42" placeholder="Enter Comments and Suggestions"></textarea>
+                    <br><br>
+                    <input type="submit">
+                </form>
+            </section>
+            <hr><br>
+        </main>
+        <footer class="navbar">
+            <ul>
+                <li>Archive</li>
+                <li>Legal</li>
+                <br><br>
+            </ul>
+        </footer>
+    </body>
+</html>
