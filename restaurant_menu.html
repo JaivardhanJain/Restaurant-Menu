@@ -74,6 +74,12 @@
                 padding: 12px 8px;
                 border-bottom: 1px solid #ccc;
             }
+            #order-section label {
+                padding: 12px 8px;
+                margin-left: auto;
+                justify-content: center;
+                border-bottom: 1px solid #ccc;
+            }
 
             #menu-section tr:hover {
                 background-color: #f1f1f1;
@@ -84,6 +90,45 @@
                 font-weight: bold;
                 color: #444;
             }
+
+            #order-section {
+                background-color: #fff;
+                padding: 2em;
+                margin: 2em auto;
+                max-width: 600px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                border-radius: 12px;
+                text-align: center;
+            }
+
+            #order-section table {
+                width: 100%;
+                border-collapse: separate;
+                border-spacing: 0 0.5em;
+                font-size: 1rem;
+            }
+
+            #order-section td {
+                padding: 0.5em 0;
+            }
+
+            #order-section label {
+                margin-left: 0.5em;
+                font-size: 1rem;
+            }
+
+            #order-form input[type="submit"] {
+                background-color: brown;
+                color: white;
+                border: none;
+                padding: 0.75em 1.5em;
+                border-radius: 6px;
+                cursor: pointer;
+                font-size: 1rem;
+                margin-top: 1em;
+                transition: background-color 0.3s ease;
+            }
+
             #contact-form {
             text-align: center;
             background-color: #fff;
@@ -136,6 +181,7 @@
                 <ul>
                     <li><a href="#about-section">About Us</a></li>
                     <li><a href="#menu-section">Menu</a></li>
+                    <li><a href="#order-section">Order</a></li>
                     <li><a href="#contact-us-section">Contact</a></li>
                 </ul>
                 <hr class="post-section">
@@ -193,16 +239,96 @@ Proin erat dui, pharetra in magna a, semper dictum tortor. Integer nibh odio, bi
                     </tr>
                 </table>
             </section>
+            <section id="order-section">
+                <form id="order-form">
+                    <u><h2 class="heads">Order</h2></u>
+                    <br>
+                    <table id="menu">
+                        <tr>
+                            <td>
+                                <label for="tmb">Truffle Mushroom Burger</label>
+                            </td>
+                            <td>
+                                <input type="number" id="tmb" value="Truffle Mushroom Burger">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="fp">Farmhouse Pizza</label>
+                            </td>
+                            <td>
+                                <input type="number" id="fp" value="Farmhouse Pizza">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="gs">Greek Salad</label>
+                            </td>
+                            <td>
+                                <input type="number" id="gs" value="Greek Salad">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="spw">Spicy Paneer Wrap</label>
+                            </td>
+                            <td>
+                                <input type="number" id="spw" value="Spicy Paneer Wrap">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="vp">Veg Pho</label>
+                            </td>
+                            <td>
+                                <input type="number" id="vp" value="Veg Pho">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="tgc">Thai Green Curry with Jasmine Rice</label>
+                            </td>
+                            <td>
+                                <input type="number" id="tgc" value="Thai Green Curry with Jasmine Rice">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="vbb">Vegan Buddha Bowl</label>
+                            </td>
+                            <td>
+                                <input type="number" id="vbb" value="Vegan Buddha Bowl">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="ppf">Peri Peri Fries</label>
+                            </td>
+                            <td>
+                                <input type="number" id="ppf" value="Peri Peri Fries">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="ppf">Mediterranean Falafel Pizza</label>
+                            </td>
+                            <td>
+                                <input type="number" id="ppf" value="Peri Peri Fries">
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <input type="submit" value="Place Order">
+                </form>
+            </section>
             <section id="contact-us-section">
                 <form id="contact-form">
                     <u><h2 class="heads">Contact Us</h2></u>
                     <br>
-                    <label for="name">Name: <input type=text id="name"></label> 
-                    <br><br>
-                    <label for="cas">Comments and Suggestions:</label>
-                    <br>
-                    <textarea id="cas" row="7" cols="42" placeholder="Enter Comments and Suggestions"></textarea>
-                    <br><br>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label for="cas">Comments and Suggestions:</label><br>
+                    <textarea id="cas" name="cas" rows="7" placeholder="Enter Comments and Suggestions"></textarea><br><br>
                     <input type="submit">
                 </form>
             </section>
